@@ -1,0 +1,151 @@
+*{
+    border: 0px;
+    margin: 0px;
+}
+
+.section-3{
+    height: 100px;
+    background-color: #323851;
+}
+
+/* ----------------------- */
+.section-4{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* padding-top: 20px; */
+    margin-bottom: 50px;
+    padding: 0px 100px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 500px;
+    display: flex;
+    padding: 30px 10px;
+   
+}
+
+.box div {
+    padding-left: 10px;
+}
+
+.box-title {
+    /* font-family: 'Be Vietnam'; */
+    font-weight: 700;
+    color: #323851;
+    margin-bottom: 20px;
+}
+
+.number{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color:#8B48BF;
+    color: #fff; 
+    border-radius: 30px;
+    text-align: center;
+    
+    font-weight: 700;
+  }
+
+.text-color{
+    color: #B3B2B7;
+}
+
+/* ----------------------- */
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-month {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.month-box{
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    
+}
+
+.month-box img {
+    transform: translateY(-50px);
+}
+
+.month-box div {
+    background-color: #FAFAFA;
+    margin-top: -40px;
+}
+
+.best-user-name {
+    font-family: Be Vietnam;
+    font-weight: 700;
+    line-height: 25.17px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #242E53;
+    margin-bottom: 50px;
+    font-family: Be Vietnam;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    
+}
+
+.more-btn {
+    background-color: #8B48BF;
+    opacity: 70%;
+    color: white; 
+    padding: 10px 50px; 
+    text-decoration: none; 
+    font-family: Be Vietnam;
+    border: none; 
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: green;
+  }
+
+/* -------------------------------- */
+
+.section-6{
+    margin-top: 100px;
+    background-color: #8B48BF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 224px;
+}
+.section-6-title {
+    font-family:Be Vietnam;
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    margin: 0;
+}
+.go-btn{
+    padding: 10px 30px; 
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: purple;
+    border: none; 
+
+}
+
+
+
