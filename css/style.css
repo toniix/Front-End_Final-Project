@@ -13,28 +13,30 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    /* padding-top: 20px; */
     margin-bottom: 50px;
-    padding: 0px 100px;
+    padding: 30px 100px;
     flex-wrap: wrap;
+    background-color: rgba(250, 250, 250, 1);
 }
 
 .box {
     width: 500px;
-    display: flex;
-    padding: 30px 10px;
+    display: block;
+    margin-top: 30px;
+    padding: 0px 20px;
    
 }
 
-.box div {
-    padding-left: 10px;
+.box-container {
+    display: flex;
+    align-items: center;
 }
 
 .box-title {
     /* font-family: 'Be Vietnam'; */
     font-weight: 700;
     color: #323851;
-    margin-bottom: 20px;
+    padding-left: 20px;
 }
 
 .number{
@@ -46,15 +48,17 @@
     color: #fff; 
     border-radius: 30px;
     text-align: center;
-    
     font-weight: 700;
-  }
+}
 
 .text-color{
     color: #B3B2B7;
 }
+.align-text {
+    padding-left: 86px;
+}
 
-/* ----------------------- */
+/* ----------SECTION 5------------- */
 .section-5 {
     display: flex;
     flex-direction: column;
@@ -66,7 +70,7 @@
     width: 90vw;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .month-box{
@@ -93,7 +97,7 @@
     margin-bottom: 10px;
 }
 
-h1 {
+.section-5-title {
     color: #242E53;
     margin-bottom: 50px;
     font-family: Be Vietnam;
@@ -120,7 +124,7 @@ h1 {
     background-color: green;
   }
 
-/* -------------------------------- */
+/* --------------SECTION 6------------------ */
 
 .section-6{
     margin-top: 100px;
@@ -138,14 +142,119 @@ h1 {
     margin: 0;
 }
 .go-btn{
-    padding: 10px 30px; 
+    padding: 15px 50px; 
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50px;
     text-decoration: none;
+    text-align: center;
     color: purple;
     border: none; 
-
 }
 
+/* unvisited link */
+.go-btn:link {
+    color: red;
+  }
+  
+  /* visited link */
+  .go-btn:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  .go-btn:hover {
+    color: orange;
+  }
+  
+  /* selected link */
+  .go-btn:active {
+    color: blue;
+  }
 
+/* ----------------MEDIA QUERY--------------------------- */
+
+
+@media (max-width: 480px) {
+
+    /* -------SECTION 4------- */
+
+    .section-4 {
+        padding: 0px;
+        padding-left: 40px;
+    }
+
+    .box {
+        width: 100%;
+        flex-direction: column; 
+        align-items: center;
+       padding: 0; 
+       margin-top: 30px;
+    }
+
+    .box-title {
+        margin-bottom: 0; 
+        text-align: center;
+        padding-left: 20px;
+    }
+
+    .box-container {
+        width: 100%;
+        background-color: rgba(139, 72, 191, 0.3);
+        display: flex;
+        align-items: center;
+        border-radius: 50px 0px 0px 50px;
+        margin-bottom: 30px;
+    }
+
+    .text-color {
+        padding: 0px 25px 0px 10px;
+    }
+   
+    
+    /* ----------SECTION 5-------------- */
+
+    .month-box:nth-child(2),
+    .month-box:nth-child(3) {
+        display: none; 
+    }
+    
+    .best-month {
+      width: 90%;
+      flex-direction: column; 
+    }
+
+    .section-5-title {
+      font-size: 45px; 
+      
+    }
+
+    .more-btn {
+      padding: 13px 50px;
+      background-color: rgba(139, 72, 191, 1);
+      ;
+    }
+  
+    /* ----------SECTION 6----------- */
+
+    .section-6 {
+        background-color: #3CDDF3;
+        height: auto;
+         flex-direction: column;
+         margin-top: 50px;
+        padding: 20px 0;
+    }
+  
+    .section-6-title {
+        width: 290px;
+        text-align: center;
+        font-size: 40px;
+    }
+  
+    .go-btn {
+        background-color: #232C50;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+        color: white;
+        margin-top: 50px;
+    }
+  }
 
